@@ -1,0 +1,20 @@
+---
+title: "Graphs"
+author: "Evan Z-G"
+date: "2023-12-07"
+output: pdf_document
+---
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(ZeleznyGreenChapter16)
+
+
+MyGraph <- ggplot(Flagstaff_Weather, aes(x=DATE1, y=TMAX)) + geom_line()
+
+
+
+MyGraph
+
+```
